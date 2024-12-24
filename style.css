@@ -1,0 +1,105 @@
+html {
+    scroll-behavior: smooth;
+}
+
+span{
+    color: rgb(22, 119, 246);
+}
+.section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Default text color for visibility */
+    text-align: center;
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    scroll-snap-align: start; /* Scroll snapping */
+}
+
+#home {
+    background-image: url('./assests/images/back3.webp');
+}
+
+#about {
+    background-image: url('./assests/images/bg2.jpg');
+}
+
+#projects {
+    background-image: url('./assests/images/bg3.jpg');
+}
+
+#skills {
+    background-image: url('./assests/images/bg1.jpg');
+}
+
+#contact {
+    background-image: url('./assests/images/back3.webp');
+}
+
+
+body {
+    margin: 0;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory; /* Snap to sections vertically */
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.text-purple {
+    color: #7952b3;
+}
+
+/* contact form */
+
+/* Classy Contact Section */
+#contact .form-control {
+    border-radius: 0.5rem; /* Rounded corners */
+    border: 1px solid #ced4da;
+}
+
+#contact .form-control:focus {
+    border-color: #6c63ff; /* Highlight focus */
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+}
+
+#contact .btn-primary {
+    background-color: #6c63ff; /* Custom button color */
+    border: none;
+    transition: background 0.3s ease;
+}
+
+#contact .btn-primary:hover {
+    background-color: #574eb8; /* Darker shade on hover */
+}
+
+#contact form {
+    background: #f8f9fa; /* Light background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Footer */
+
+footer a {
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #6c63ff; /* Custom hover color */
+}
+
+footer i {
+    transition: transform 0.3s ease;
+}
+
+footer a:hover i {
+    transform: scale(1.2); /* Slight zoom-in effect */
+}
